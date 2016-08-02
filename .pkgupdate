@@ -1,0 +1,1 @@
+update_pkgver=$(wget -q -O- http://dbeaver.jkiss.org/download/ | sed -nr 's/.*h2.*Community Edition ([0-9.]*).*/\1/p')
