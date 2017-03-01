@@ -1,21 +1,21 @@
 # Maintainer: Arne Hoch <arne@derhoch.de>
 
 pkgname=dbeaver
-pkgver=4.0.1
-pkgrel=2
+pkgver=4.0.2
+pkgrel=1
 pkgdesc="A free universal database tool for developers and database administrators"
 arch=('i686' 'x86_64')
 url="http://dbeaver.jkiss.org/"
 license=("GPL2")
-depends=('java-runtime>=1.7' 'gtk2' 'gtk-update-icon-cache')
+depends=('java-runtime>=1.8' 'gtk2' 'gtk-update-icon-cache')
 
 source=('dbeaver.desktop')
 source_i686=("http://dbeaver.jkiss.org/files/$pkgver/dbeaver-ce-$pkgver-linux.gtk.x86.tar.gz")
 source_x86_64=("http://dbeaver.jkiss.org/files/$pkgver/dbeaver-ce-$pkgver-linux.gtk.x86_64.tar.gz")
 
 sha256sums=('cf1e850dcb3544507eeb59b8d2e84b67cd25b546e3eaf03a0ab27ca841361478')
-sha256sums_i686=('7460cd6a32735d44eabda2db13bc8a7e62e2cdaf4a176286a5942431be275b23')
-sha256sums_x86_64=('4960d0d2daf488eb74e0ca9fad40d7f737f4f2a3929b838e3eaedf4326792e6c')
+sha256sums_i686=('6911e8d9698d637d0a242998abf4995a4d3970cf195330c1dc8b4836dee8698b')
+sha256sums_x86_64=('e3762a8ed16039f5b73b9c3902d1ad1d762439acd91c685df53597e72a19426f')
 
 package() {
   cd "$pkgdir"
